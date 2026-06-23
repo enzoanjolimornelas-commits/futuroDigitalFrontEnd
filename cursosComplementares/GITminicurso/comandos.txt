@@ -1,3 +1,7 @@
+    Fontes:
+https://www.youtube.com/watch?v=ts-H3W1uLMM
+https://www.youtube.com/watch?v=7cNP3AE49Bg
+    
     Comandos de Terminal:
 dir (Listar arquivos da pasta atual)
 touch "nomeDoArquivo" (criar arquivo vazio)
@@ -6,6 +10,7 @@ cd "nomeDaPasta" (mudar de pasta)
 cd .. (mudar pasta acima)
 mkdir "nomeDaPasta" (criar nova pasta)
 clear (limpar tela)
+code . (Abre a pasta no VScode)
 
     Para configurar nome e email:
 git config --global user.name "nomeGitHub"
