@@ -5,6 +5,7 @@ cd (Ver caminho)
 cd "nomeDaPasta" (mudar de pasta)
 cd .. (mudar pasta acima)
 mkdir "nomeDaPasta" (criar nova pasta)
+clear (limpar tela)
 
     Para configurar nome e email:
 git config --global user.name "nomeGitHub"
@@ -41,3 +42,58 @@ git diff --staged
 git commit -m "comentario"
 git commit -a -m "comentario" (Adicionar todos os arquivos untracked e commitar)
 git commit --ammend -m "comentarioAjustado" (Arrumar os arquivos do último commit)
+
+    Ver histórico de commits e seus códigos HASH:
+git log
+git log -3 (Um exemplo, mostra apenas os últimos 3 commits)
+git log --oneline (ver cada um em uma linha só)
+git log --oneline -5
+git log --author="nomeDoAutor" (filtrar por autor)
+git log --before="YYYY/MM/DD" (filtrar por data)
+git log -- data/ (ver numa pasta específica)
+git shortlog
+git shortlog -sn (números de commits de cada autor)
+git reflog (histórico de mudanças no repositório)
+
+    Para branches (ramificações):
+git branch (mostra a branch atual e as outras branches)
+git branch "nomeDaBranch" (cria a branch)
+git branch -D "nomeDaBranch" (deleta a branch)
+git checkout -b dev (cria a branch e automaticamente entra nela)
+git branch -m "nomeNovodaBranch" (trocar nome da branch atual)
+git diff "branch1" "branch2" (mostra a diferença das branches)
+
+    Repositórios Remotos:
+git remote add origin "URLdoRepositorioRemoto"
+git remote -v (ver repositório remoto)
+git push -u origin main (pusha do origin pro main)
+git remote remove origin
+git pull origin main (sincroniza todas as mudanças pro repositório local)
+git remote show origin (mostrar URL)
+git remote set-url origin "novaURL"
+
+    Merge e rebase:
+git merge "nomeDaBranch" (mescla duas branches, a partir da branch que você esta com a qual vc vai digitar)
+git merge --abort (aborta o merge)
+git rebase main (jogar novas features de uma branch para a main)
+git rebase -i HEAD~3 (Um exemplo, rebase com os últimos 3 commits)
+git rebase --abort
+
+    Tags:
+git tag "nomeDaTag"
+git tag (ver todas as tags)
+git tag -d "nomeDaTag" (Remover tag específica)
+git tag -a "nomeDaTag" -m "mensagem" (vincular tag a uma mensagem)
+git show "nomeDaTag" (ver tag)
+git tag -s "nomeDaTag" -m "mensagem" (tag assinada)
+git push origin "nomeDaTag" (enviar tag ao repositório remoto)
+git push origin --delete "nomeDaTag" (remover tag remotamente)
+
+    Arrumar erros:
+git checkout --  "nomeDoArquivo" (Descarta alterações de um arquivo específico)
+git checkout -- . (Descarta as alterações de tudo)
+git reset --hard HEAD (DESTRÓI qualquer alteração não commitada)
+git reset --hard HEAD~1 (Volta exatamente tudo como no último commit)
+git revert "códigoHASH" (Reverte um commit anterior e cria um commit novo)
+git stash (Pega todas as mudanças)
+git push origin main --force (pusha e reverte o último commit)
