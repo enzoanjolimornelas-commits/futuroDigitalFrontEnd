@@ -1,0 +1,22 @@
+body{
+    background-color: #D50057;
+    color: #C5E000;
+    font-family: serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1{
+    background-color: #1A1A1A;
+}
+
+h2{
+    font-style: italic;
+    font-size: 0.8rem;
+    background-color: #1A1A1A;
+}
+
+p{
+    font-size: 12px;
+    text-align: justify;
+}
