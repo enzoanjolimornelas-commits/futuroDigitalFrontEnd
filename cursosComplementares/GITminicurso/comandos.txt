@@ -1,0 +1,43 @@
+    Comandos de Terminal:
+dir (Listar arquivos da pasta atual)
+touch "nomeDoArquivo" (criar arquivo vazio)
+cd (Ver caminho)
+cd "nomeDaPasta" (mudar de pasta)
+cd .. (mudar pasta acima)
+mkdir "nomeDaPasta" (criar nova pasta)
+
+    Para configurar nome e email:
+git config --global user.name "nomeGitHub"
+git config --global user.email "emailGitHub"
+
+    Para verificar nome e email:
+git config --global --list
+git config --list (sistema e local também)
+
+    Para inicializar um repositório local:
+git init . (cria uma pasta .git\)
+git init --bare (Parâmetro bare, toda a estrutura vai pra raiz)
+
+    Para clonar um repositório remoto:
+git clone "URLdoRepositório"
+
+    Para adicionar no repositório ou tirar do staged:
+git add . (Adicionar todos os arquivos untracked)
+git add "nomeDoArquivo" (Adicionar arquivos específicos)
+git add -A (Atualizar apenas quem não entrou no staged)
+git add *.html (Um exemplo, adiciona apenas .html)
+git reset "nomeDoArquivo" (Para tirar do staged, não altera no working directory)
+git restore "nomeDoArquivo" (Volta para a versão do staged)
+
+    Para ver estado do repositório:
+git status
+
+    Para ver diferenças entre staged e Working Directory dentro dos arquivos:
+git diff (Ver de todos, não recomendado)
+git diff "nomeDoArquivo" (Ver de um arquivo só)
+git diff --staged 
+
+    Criar uma confirmação (commit):
+git commit -m "comentario"
+git commit -a -m "comentario" (Adicionar todos os arquivos untracked e commitar)
+git commit --ammend -m "comentarioAjustado" (Arrumar os arquivos do último commit)
