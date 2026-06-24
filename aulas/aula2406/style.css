@@ -1,3 +1,5 @@
 body{
-    background-image: url('img/dthedelinquent-nintendo-4684999.jpg');
+    background-image: url('img/dthedelinquent-nintendo-4684999_640.jpg');
+    background-repeat: repeat-x;
+    background-color: brown;
 }
