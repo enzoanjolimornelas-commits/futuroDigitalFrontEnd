@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    color: blue;
+}
+
+p:hover{
+    color:aquamarine;
+}
+
+.maior{
+    color: yellow;
+    background-color: blue;
+    display: block;
+}
+
+h1.maior{
+    background-color: blueviolet;
+}
+
+.negrito{
+    font-style: bolder;
+}

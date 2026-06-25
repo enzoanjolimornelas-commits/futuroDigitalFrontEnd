@@ -1,0 +1,28 @@
+body{
+    font-size: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    background-color: yellowgreen;
+}
+
+a{
+    background-color: blue;
+    color: yellow;
+    text-decoration: none;
+    display: block;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+span{
+    color: yellow;
+    font-weight: bolder;
+}
