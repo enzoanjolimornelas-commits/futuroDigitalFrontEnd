@@ -1,0 +1,11 @@
+    Parte 1:
+1. imagens/logo.png 
+2. imagens/banner.jpg
+3. ../imagens/logo.png
+4. ../imagens/banner.jpg
+5. ../index.html
+
+    Parte 2:
+1. ../imagens/logo.png
+2. ../imagens/banner.jpg
+3. ../index.html
