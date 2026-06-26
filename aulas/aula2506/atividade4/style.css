@@ -1,0 +1,12 @@
+p::first-line {
+    color: blue;
+    font-weight: bold;
+}
+
+p:hover::first-letter {
+    color: green;
+}
+
+a[target="_blank"] {
+    background-color: yellow;
+}
