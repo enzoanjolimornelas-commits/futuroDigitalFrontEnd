@@ -1,0 +1,41 @@
+    Parte 1:
+1. A função delas é redimensionar elementos HTML, sendo width a largura e o height a altura.
+2. As medidas relativas dependem de outro elemento, sendo ele um elemento pai ou o viewport width da página (rem e vw), já as medidas absolutas elas são fixas e precisas como px e pt.
+3. Porque as medidas relativas elas se adaptam muito bem a diferentes tamanhos de tela.
+4. A altura é definida automaticamente sem quebrar a proporção do dimensionamento da imagem.
+5. O conteúdo vaza para fora dos limites do elemento.
+
+    Parte 2:
+6. Para não quebrar a proporção do dimensionamento da imagem;
+7. A imagem pode diminuir de qualidade, até mais dependendo do formato.
+8. A página pode demorar mais para abrir e não rodar adequadamente em todos os dispositivos.
+
+    Parte 3:
+9. Ela redimensiona o elemento com base no elemento pai.
+10. Porque os elementos pais podem não ter um height definido e isso causa bugs no cálculo.
+11. São viewport height e width, dimensões do elemento com base no viewport (a área visível) da página.
+12. O viewport height não tem o problema da % no height.
+
+    Parte 4:
+13. Servem para definir limites mínimos e máximos para largura e altura.
+14. O elemento fica com 50% da largura da página (viewport) e é responsivo, mas não pode ter menos de 400px e nem mais de 600px.
+
+    Parte 5:
+15. Espessura, Estilo e Cor
+16. border: 1px solid black;
+17. Serve para "arredondar" a borda.
+
+    Parte 6:
+18. Margin é o espaço externo (fora da borda) entre os elementos, o Padding é o espaço interno entre o conteúdo e a borda.
+19. Margem vertical mede 10px e a horizontal mede 20px.
+20. Seguindo a lógica de um relógio, esses são os paddings, respectivamente, de cima, direita, baixo e esquerda.
+
+    Parte 7:
+21. O padding e o margin podem somar junto as dimensões do elemento se a propriedade box-sizing for content-box.
+22. Tamanho: largura e altura definidas + padding + border.
+23. Ela define se o padding e a border contam no tamanho ou não.
+24. content-box considera apenas o conteúdo como tamanho e o border-box considera border e padding como tamanho adicionalmente.
+
+    Parte 8:
+25. Ele é o seletor universal, todos os elementos abaixo seguirão estas informações.
+26. Porque os elementos ficam mais previsíveis para o desenvolvedor organizar as posições dos elementos da página.
